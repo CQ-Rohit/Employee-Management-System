@@ -1,0 +1,35 @@
+1.Install django 
+pip install django==3.2.5
+
+
+2.Crete projects
+django-admin startproject amazon
+
+cd amazon 
+
+3.Creating web pages
+python manage.py startapp webpagename
+
+4.Run project
+python manage.py runserver
+
+
+-----------------------------------
+1.Setting.py==> import os
+2.Setting.py==> 'DIRS': [os.path.joint(BASE_DIR,'templates')]
+3.Create homepage==> urls file(Copy code from Project Urls)
+
+Homepage/Urls.py
+from.import views
+path('',views.home,name='Homepage')
+
+4.Main urls page
+path('End Point',include('Homepage.urls'))==> In home page there is one another urls.py
+[One time process]
+
+-------------------------------------
+Home.html
+---------
+Menu
+<a href="aboutus">Aboutus</a> <br>
+<a hred="contactus">Contact us</a> <br>
